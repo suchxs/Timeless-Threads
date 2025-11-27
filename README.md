@@ -6,7 +6,7 @@ The system will streamline product browsing, secure checkout, payment processing
 ## 🛠 Tech Stack
 ![Tech Stack](https://skills-icons.vercel.app/api/icons?i=react,tailwind,mysql,node,vite,axios,express)
 
-[Access the Website Here](https://timelessthreads.xyz/)
+[Access the Website Here](https://timelessthreads.xyz/)  (To be Reinstated)
 ---
 
 ## 📁 Project Structure
@@ -78,7 +78,7 @@ Quick Setup Guide for the Application
 2. Clone the repository:
 
     ```bash
-    git clone https://github.com/watsonjph/Timeless-Threads
+    git clone https://github.com/suchxs/Timeless-Threads
     ```
 
 3. Install dependencies:
@@ -106,7 +106,7 @@ Quick Setup Guide for the Application
 ---
 ## Group Members:
 
-[![Joseph Corsega](https://github.com/watsonjph.png?size=60 "Joseph Corsega")](https://github.com/watsonjph) [![Paul Divinagracia](https://github.com/PaoloBen.png?size=60 "Paul Divinagracia")](https://github.com/PaoloBen) 
+[![Joseph Corsega](https://github.com/suchxs.png?size=60 "Joseph Corsega")](https://github.com/suchxs) [![Paul Divinagracia](https://github.com/PaoloBen.png?size=60 "Paul Divinagracia")](https://github.com/PaoloBen) 
 <a href="https://github.com/sojaARY">
     <img src="https://github.com/sojaARY.png" width="60" height="60" alt="Alex Yap" />
 </a>
