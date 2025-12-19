@@ -1,16 +1,31 @@
-import sgMail from '@sendgrid/mail';
+import nodemailer from 'nodemailer';
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// Create reusable transporter using Gmail SMTP
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
+  },
+});
 
 async function sendEmail({ to, subject, text, html }) {
-  const msg = {
+  const mailOptions = {
+    from: `"Timeless Threads" <${process.env.EMAIL_USER}>`,
     to,
-    from: process.env.FROM_EMAIL, // Gamita sa verified sender from .env
     subject,
     text,
     html,
   };
-  await sgMail.send(msg);
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully:', info.messageId);
+    return info;
+  } catch (error) {
+    console.error('Error sending email:', error);
+    throw error;
+  }
 }
 
 export { sendEmail }; 
